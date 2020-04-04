@@ -787,7 +787,7 @@ header.mobile-header-2 .site-logo img {
   height: 310px;
   z-index: 1;
   width: 100%;
-  background-position-y: center;
+  background-position-y: bottom;
   background-size: cover;
 }
 
