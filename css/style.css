@@ -1359,10 +1359,6 @@ select.portfolio-filter-mobile {
 /*                      SKILLS                            
 /*=================================================================*/
 
-#skills {
-  overflow: hidden;
-}
-
 #skills img {
   height: 65px;
   padding: 10px;
