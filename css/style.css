@@ -784,7 +784,7 @@ header.mobile-header-2 .site-logo img {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/beach.jpeg') no-repeat center center;
   position: absolute;
   top: 0;
-  height: 310px;
+  height: 39%;
   z-index: 1;
   width: 100%;
   background-position-y: bottom;
@@ -2599,7 +2599,7 @@ body {
 
 @media only screen and (max-width: 401px) {
   #berkeley {
-    height: 290px !important;
+    height: 37% !important;
   }
 }
 
