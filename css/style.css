@@ -1165,7 +1165,10 @@ select.portfolio-filter-mobile {
   overflow: hidden;
 }
 
-
+.real-life span {
+  display: inline-block;
+  margin-right: 7px
+}
 
 /*=================================================================*/
 /*                      CONTACT                              
