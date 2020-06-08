@@ -2180,11 +2180,13 @@ body.dark footer.footer {
 
 .cool-link-2 a {
   background-color: #1cc49a50;
-  color: inherit;
+  color: #34495E;
+  text-decoration: none;
 }
 
 .cool-link-2 a:hover {
   background-color: #1cc49a99;
+  color: #34495E;
 }
 
 .btn-default {
