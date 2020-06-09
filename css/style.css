@@ -870,9 +870,11 @@ section.home.light .social-icons li a:hover {
 .section-title {
   font-size: 36px;
   margin: 0;
-  margin-left: 14px;
+  /* margin-left: 14px; */
   position: relative;
 }
+
+/*
 .section-title:before {
   content: "";
   background-image: url(../images/dots-bg.svg);
@@ -883,6 +885,7 @@ section.home.light .social-icons li a:hover {
   position: absolute;
   width: 37px;
 }
+*/
 
 /*=================================================================*/
 /*                      PORTFOLIO                              
