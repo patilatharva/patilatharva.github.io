@@ -937,6 +937,10 @@ select.portfolio-filter-mobile {
 	padding-bottom: 1.25rem!important;
 }
 
+#parent h3 {
+	margin-top: 40px
+}
+
 a:hover .problem-name {
 	text-decoration: underline;
 }

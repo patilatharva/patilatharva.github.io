@@ -1,4 +1,3 @@
-var data;
 const createSection = (topics) => {
 	var section = $('<div/>',{
 						'class': 'list-group',
@@ -9,7 +8,7 @@ const createSection = (topics) => {
 							'class': 'list-group-item  flex-column align-items-start subsection',
 						});
 
-		subsection.append(`<div><h6 class="mb-2 mt-1 subtopic-title">${subtopic.title}</h6></div>`);
+		subsection.append(`<div><h6 class="mb-2 mt-1 subtopic-title">${subtopic.title} (${subtopic.problems.length})</h6></div>`);
 		
 		var problems = $('<div/>');
 		var list = $('<ul/>',{
@@ -60,6 +59,8 @@ const createSection = (topics) => {
 	});
 	return section;
 }
+
+var data;
 
 $.getJSON('problems.json', function(data) {
 	data.forEach(function(topic) {
