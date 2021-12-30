@@ -58,15 +58,12 @@ const createSection = (topics) => {
 		subsection.append(problems);
 		section.append(subsection);
 	});
-	console.log(section);
 	return section;
 }
 
 $.getJSON('problems.json', function(data) {
-	console.log(data);
 	data.forEach(function(topic) {
 		$("#parent").append(`<h3>${topic.topic}</h3>`)
 		$("#parent").append(createSection(topic));
-		console.log('added');
 	});
 });
