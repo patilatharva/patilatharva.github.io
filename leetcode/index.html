@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Atharva Patil</title>
+	<title>leetcode guide</title>
 	<link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" media="all">
 	<link rel="stylesheet" href="../css/simple-line-icons.css" type="text/css" media="all">
 	<link rel="stylesheet" href="../css/slick.css" type="text/css" media="all">
@@ -19,14 +19,67 @@
 
 
 <!-- main layout -->
-<main class="content-2">
+<div class="content-3">
 	<!-- section home -->
-	<section id="home" class="home light d-flex">
-		<div class="container">
-			test
+		<div class="container" id="parent">
+			<!-- <h3>Linked lists</h3>
+			<div class="list-group">
+				<div class="list-group-item  flex-column align-items-start">
+					<div>
+						<h6 class="mb-1">In-place traversal</h6>
+					</div>
+				  	<div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">
+								<a href="">
+									Dapibus ac facilisis in
+								</a>
+							</li>
+							<li class="list-group-item">Morbi leo risus</li>
+							<li class="list-group-item">Porta ac consectetur ac</li>
+							<li class="list-group-item">Vestibulum at eros</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="list-group-item  flex-column align-items-start">
+					<div>
+						<h5 class="mb-1">Swap nodes in pairs </h5>
+					</div>
+				  	<div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">
+								<a href="">
+									Dapibus ac facilisis in
+								</a>
+							</li>
+							<li class="list-group-item">Morbi leo risus</li>
+							<li class="list-group-item">Porta ac consectetur ac</li>
+							<li class="list-group-item">Vestibulum at eros</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="list-group-item  flex-column align-items-start">
+					<div>
+						<h5 class="mb-1">In-place traversal</h5>
+					</div>
+				  	<div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">
+								<a href="">
+									Dapibus ac facilisis in
+								</a>
+							</li>
+							<li class="list-group-item">Morbi leo risus</li>
+							<li class="list-group-item">Porta ac consectetur ac</li>
+							<li class="list-group-item">Vestibulum at eros</li>
+						</ul>
+					</div>
+				</div>
+			</div> -->
 		</div>
-	</section>
-</main>
+</div>
 
 <!-- SCRIPTS -->
 <script src="../js/jquery-1.12.3.min.js"></script>
@@ -47,7 +100,54 @@
 <script src="../js/jquery.magnific-popup.min.js"></script>
 <script src="../js/custom.js"></script>
 <script src="../https://kit.fontawesome.com/17b75eb489.js" crossorigin="anonymous"></script>
+<script>
+	var data;
 
+
+	const createSection = (topics) => {
+		var section = $('<div/>',{
+							'class': 'list-group',
+						});
+
+		topics.subtopics.forEach(function(subtopic) {
+			var subsection = $('<div/>',{
+								'class': 'list-group-item  flex-column align-items-start',
+							});
+
+			subsection.append(`<div><h6 class="mb-1">${subtopic.title}</h6></div>`);
+			
+			var problems = $('<div/>');
+			var list = $('<ul/>',{
+								'class': 'list-group list-group-flush',
+							});
+			
+			subtopic.problems.forEach(function(problem) {
+				var item = $('<li/>',{
+								'class': 'list-group-item'
+							});
+				item.append(`<a href="${problem.url}" target="_blank">${problem.title}</a>`)
+				list.append(item);
+			});
+			problems.append(list);
+			subsection.append(problems);
+			section.append(subsection);
+		});
+		console.log(section);
+		return section;
+	}
+
+	$.getJSON('problems.json', function(data) {
+		console.log(data);
+		// loop through all books
+		data.forEach(function(topic) {
+			// now you can put every book in your <div>
+			//$("#test").append(`<div><h2>${topic.topic}</h2></div>`);
+			$("#parent").append(`<h3>${topic.topic}</h3>`)
+			$("#parent").append(createSection(topic));
+			console.log('added');
+		});
+	});
+</script>
 
 </body>
 </html>
