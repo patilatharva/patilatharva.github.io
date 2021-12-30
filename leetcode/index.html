@@ -22,62 +22,7 @@
 <div class="content-3">
 	<!-- section home -->
 		<div class="container" id="parent">
-			<!-- <h3>Linked lists</h3>
-			<div class="list-group">
-				<div class="list-group-item  flex-column align-items-start">
-					<div>
-						<h6 class="mb-1">In-place traversal</h6>
-					</div>
-				  	<div>
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item">
-								<a href="">
-									Dapibus ac facilisis in
-								</a>
-							</li>
-							<li class="list-group-item">Morbi leo risus</li>
-							<li class="list-group-item">Porta ac consectetur ac</li>
-							<li class="list-group-item">Vestibulum at eros</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="list-group-item  flex-column align-items-start">
-					<div>
-						<h5 class="mb-1">Swap nodes in pairs </h5>
-					</div>
-				  	<div>
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item">
-								<a href="">
-									Dapibus ac facilisis in
-								</a>
-							</li>
-							<li class="list-group-item">Morbi leo risus</li>
-							<li class="list-group-item">Porta ac consectetur ac</li>
-							<li class="list-group-item">Vestibulum at eros</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="list-group-item  flex-column align-items-start">
-					<div>
-						<h5 class="mb-1">In-place traversal</h5>
-					</div>
-				  	<div>
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item">
-								<a href="">
-									Dapibus ac facilisis in
-								</a>
-							</li>
-							<li class="list-group-item">Morbi leo risus</li>
-							<li class="list-group-item">Porta ac consectetur ac</li>
-							<li class="list-group-item">Vestibulum at eros</li>
-						</ul>
-					</div>
-				</div>
-			</div> -->
+			<h1>Leetcode Patterns</h1>
 		</div>
 </div>
 
@@ -111,10 +56,10 @@
 
 		topics.subtopics.forEach(function(subtopic) {
 			var subsection = $('<div/>',{
-								'class': 'list-group-item  flex-column align-items-start',
+								'class': 'list-group-item  flex-column align-items-start subsection',
 							});
 
-			subsection.append(`<div><h6 class="mb-1">${subtopic.title}</h6></div>`);
+			subsection.append(`<div><h6 class="mb-2 mt-1 subtopic-title">${subtopic.title}</h6></div>`);
 			
 			var problems = $('<div/>');
 			var list = $('<ul/>',{
@@ -122,10 +67,41 @@
 							});
 			
 			subtopic.problems.forEach(function(problem) {
+				color = "#B2DFDB";
+				if (problem.difficulty == "Medium") {
+					color = "#FFE0B2";
+				} else if (problem.difficulty == "Hard") {
+					color = "#FFCDD2";
+				}
+				
+				var wrapper = $('<a/>', {
+					css: {
+						'height': '100%',
+						'width': '100%'
+					},
+					'class': 'd-flex justify-content-between align-items-center wrapper'
+				});
+				wrapper.attr("href", problem.url);
+				wrapper.attr("target", "_blank");
+
 				var item = $('<li/>',{
-								'class': 'list-group-item'
+								'class': 'list-group-item',
+								css: {
+									'background-color': color
+								}
 							});
-				item.append(`<a href="${problem.url}" target="_blank">${problem.title}</a>`)
+				
+				item.append(wrapper);
+				wrapper.append(`<div style="color: #454360" class="problem-name">${problem.title}</div>`);
+				
+				if (problem.difficulty == "Easy") {
+					wrapper.append(`<span class="badge badge-success badge-pill">Easy</span>`);
+				} else if (problem.difficulty == "Medium") {
+					wrapper.append(`<span class="badge badge-warning badge-pill">Medium</span>`);
+				} else {
+					wrapper.append(`<span class="badge badge-danger badge-pill">Hard</span>`);
+				}
+				
 				list.append(item);
 			});
 			problems.append(list);
