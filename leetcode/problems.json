@@ -379,6 +379,16 @@
 			  "title": "Task Scheduler",
 			  "url": "https://leetcode.com/problems/task-scheduler",
 			  "difficulty": "Medium"
+			},
+			{
+			  "title": "Meeting Rooms",
+			  "url": "https://leetcode.com/problems/meeting-rooms/",
+			  "difficulty": "Medium"
+			},
+			{
+			  "title": "Meeting Rooms II",
+			  "url": "https://leetcode.com/problems/meeting-rooms-ii/",
+			  "difficulty": "Medium"
 			}
 		  ]
 		},
