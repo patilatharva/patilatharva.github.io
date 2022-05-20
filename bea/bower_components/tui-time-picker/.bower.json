@@ -1,0 +1,36 @@
+{
+  "name": "tui-time-picker",
+  "authors": [
+    "NHN. FE Development Lab <dl_javascript@nhn.com>"
+  ],
+  "main": [
+    "dist/tui-time-picker.js",
+    "dist/tui-time-picker.css"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "examples",
+    "src",
+    "test",
+    "tui-note.config.js",
+    "tuidoc.config.json",
+    "jest.config.js",
+    "webpack.config.js",
+    "package.json",
+    "package-lock.json"
+  ],
+  "homepage": "https://github.com/nhnent/tui.time-picker",
+  "version": "2.1.4",
+  "_release": "2.1.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.1.4",
+    "commit": "07f93d35b766611b2b4904dcabbb60c08078aead"
+  },
+  "_source": "https://github.com/nhnent/tui.time-picker.git",
+  "_target": "^2.0.1",
+  "_originalSource": "tui-time-picker"
+}

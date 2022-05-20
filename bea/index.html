@@ -39,7 +39,14 @@
 	<link
 		href="https://uploads-ssl.webflow.com/6257d63bc996a895c7efa48a/6257d63bc996a8cafcefa4e2_webclip-investor-x-template.svg"
 		rel="apple-touch-icon" />
-	
+
+	<!-- TUI calendar -->
+	<script src="../bower_components/tui-code-snippet/dist/tui-code-snippet.js"></script>
+	<link rel="stylesheet" href="../bower_components/tui-calendar/dist/tui-calendar.css">
+
+	<!-- If you use the default popups, use this. -->
+	<link rel="stylesheet" href="../bower_components/tui-date-picker/dist/tui-date-picker.css">
+	<link rel="stylesheet" href="../bower_components/tui-time-picker/dist/tui-time-picker.css">
 </head>
 
 <body>
@@ -59,6 +66,8 @@
 								<li class="nav-item-wrapper"><a href="/" aria-current="page"
 										class="nav-link w--current">Home</a></li>
 								<li class="nav-item-wrapper"><a href="./about.html" class="nav-link">About</a></li>
+								
+								<!--
 								<li class="nav-item-wrapper">
 									<div data-hover="true" data-delay="0"
 										data-w-id="04824156-eced-c654-ab98-88caa897ff80" class="nav-link w-dropdown">
@@ -143,7 +152,9 @@
 										</nav>
 									</div>
 								</li>
-								<li class="nav-item-wrapper"><a href="/portfolio" class="nav-link">Portfolio</a></li>
+							-->
+								<li class="nav-item-wrapper"><a href="/portfolio" class="nav-link">Events</a></li>
+								<li class="nav-item-wrapper"><a href="/portfolio" class="nav-link">Team</a></li>
 								<li class="nav-item-wrapper"><a href="/contact" class="nav-link">Contact</a></li>
 							</ul>
 						</nav>
@@ -309,8 +320,8 @@
 		</div-->
 		<div class="section wf-section">
 			<div class="container-default w-container">
-				<div>
-					<div class="mg-bottom-large-80px">
+				<div class="calendar">
+					<div class="">
 						<div data-w-id="0a1c79ce-0e45-5897-44d5-0a4f3f9f8680" style="width:0px"
 							class="dash---130px mg-bottom-32px">
 							<div class="fill-block bg-primary-1"></div>
@@ -319,11 +330,16 @@
 							style="-webkit-transform:translate3d(0, 0, 0) scale3d(0.97, 0.97, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.97, 0.97, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.97, 0.97, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.97, 0.97, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
 							class="display-2 mg-bottom-0px">Events</h2>
 					</div>
-					<div class="_2-column-grid approach-card first">
-						<div>
-							<h4 class="display-4">Under construction...</h4>
-						</div>
+
+					<div class="title-space">
+						<span class="dateYear"></span>
+						<span style="display: inline-block">
+							<button id="prevMonth">prev</button> 
+							&nbsp;
+							<button id="nextMonth">next</button>
+						</span>
 					</div>
+					<div id="home-calendar"></div>
 				</div>
 			</div>
 		</div>
@@ -644,6 +660,13 @@
 	<script src="js/jquery-min.js"></script>
 	<script src="js/index.js"
 		type="text/javascript"></script>
+	<script src="js/calendar.js" type="module"></script>
+
+	<!-- calendar -->
+	<script type="text/javascript" src="../bower_components/tui-dom/dist/tui-dom.min.js"></script>
+	<script type="text/javascript" src="../bower_components/tui-time-picker/dist/tui-time-picker.min.js"></script>
+	<script type="text/javascript" src="../bower_components/tui-date-picker/dist/tui-date-picker.min.js"></script>
+	<script type="text/javascript" src="../bower_components/tui-calendar/dist/tui-calendar.min.js"></script>
 </body>
 
 </html>

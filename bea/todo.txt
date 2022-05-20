@@ -1,0 +1,23 @@
+- friendlier images will make the website more welcoming
+- each item in What We Offer could lead to a more descriptive section in the About page
+- About in header could have a drop down list
+- better first description in About page
+- talk about the origins (history) in the About page
+- possibly a bio modal for each member
+- load all animation in each section at once
+- make descriptions more appealing
+
+nick
+- slightly more detailed section between section 1 and 2
+- testimonies below calendar
+- about b/w team and contact
+
+access to info
+diversity - open to all
+networking
+food...and drinks
+
+homepage - what we Offer
+- 'get involved' for each kind
+about
+- more detailed way of getting involved
