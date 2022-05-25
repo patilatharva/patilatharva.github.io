@@ -1,4 +1,4 @@
-var calendar = new tui.Calendar('#home-calendar', {
+var calendar = new tui.Calendar('.calendar-body', {
 	isReadOnly: true,
 	defaultView: 'month',
 	taskView: true,
