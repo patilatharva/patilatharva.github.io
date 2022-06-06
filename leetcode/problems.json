@@ -687,6 +687,36 @@
 			}
 		  ]
 		},
+                {
+                  "title": "Trie",
+                  "problems": [
+                        {
+                           "title": "Implement Trie (Prefix Tree)",
+                           "url": "https://leetcode.com/problems/implement-trie-prefix-tree/",
+                           "difficulty": "Medium"
+                        },
+                        {
+                           "title": "Longest Word in Dictionary",
+                           "url": "https://leetcode.com/problems/longest-word-in-dictionary/",
+                           "difficulty": "Medium"
+                        },
+                        {
+                           "title": "Maximum XOR of Two Numbers in an Array",
+                           "url": "https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/",
+                           "difficulty": "Medium"
+                        },
+                        {
+                           "title": "Word Search II",
+                           "url": "https://leetcode.com/problems/word-search-ii/",
+                           "difficulty": "Hard"
+                        },
+                        {
+                           "title": "Concatenated Words",
+                           "url": "https://leetcode.com/problems/concatenated-words/",
+                           "difficulty": "Hard"
+                        }
+                  ]
+                },
 		{
 		  "title": "Graph Traversal",
 		  "problems": [
