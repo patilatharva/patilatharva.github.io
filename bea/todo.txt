@@ -21,3 +21,22 @@ homepage - what we Offer
 - 'get involved' for each kind
 about
 - more detailed way of getting involved
+
+
+6/29
+
+HOME
+- tagline: Harnessing Berkeley's resources to foster future innovators (DONE)
+- remove About Us section (DONE)
+- remove image (DONE)
+- change What We Offer to two columns
+	- Students and Organizations (DONE)
+- Add Highlights above Events section (DONE)
+
+EVENTS
+- kinds of Events
+- testimonies
+
+
+STORIES
+- gallery

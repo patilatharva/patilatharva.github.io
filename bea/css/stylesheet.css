@@ -1352,7 +1352,7 @@ figure {
 .card.invested-industries {
   padding-top: 25px;
   padding-bottom: 25px;
-  border-bottom: 1px solid #dce2eb;
+  /* border-bottom: 1px solid #dce2eb; */
 }
 
 .card.invested-industries.first {

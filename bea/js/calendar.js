@@ -12,12 +12,12 @@ var calendar = new tui.Calendar('.calendar-body', {
 	},
   });
 
-$('#nextMonth').click(() => {
+$('.nextMonth').click(() => {
 	calendar.next();
 	$('.dateYear')[0].innerHTML = getMonthYear();
 });
 
-$('#prevMonth').click(() => {
+$('.prevMonth').click(() => {
 	calendar.prev();
 	$('.dateYear')[0].innerHTML = getMonthYear();
 });
