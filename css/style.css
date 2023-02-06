@@ -882,7 +882,7 @@ select.portfolio-filter-mobile {
 	background-size: contain;
 	min-height: 200px;
 	padding-left: 20px;
-	color: #454360!important
+	color: #37352F!important
 }
 
 .contact-info h3 {
@@ -893,7 +893,7 @@ select.portfolio-filter-mobile {
 .contact-info .social-icons li a {
 	font-size: 50px;
 	padding-right: 40px;
-	color: #454360!important
+	color: #37352F!important
 }
 
 .contact-info .social-icons li a:hover {
@@ -901,7 +901,7 @@ select.portfolio-filter-mobile {
 }
 
 .contact-info .email {
-	color: #454360;
+	color: #37352F;
 	vertical-align: 15px;
 	display: inline-block
 }
