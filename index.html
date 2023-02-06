@@ -41,7 +41,7 @@
 	<nav>
 		<ul class="vertical-menu scrollspy">
 			<li class="active"><a href="#home"><i class="icon-home"></i></a></li>
-			<li><a href="#about"><i class="icon-user-following"></i></a></li>
+			<li><a href="#about"><i class="icon-user"></i></a></li>
 			<li><a href="#experience"><i class="icon-briefcase"></i></a></li>
 			<li><a href="#works"><i class="icon-layers"></i></a></li>
 			<li><a href="#contact"><i class="icon-bubbles"></i></a></li>
@@ -121,11 +121,11 @@
                                 <!-- about text -->
                                 <p>Hey there, I'm Atharva!</p>
                                 <p class="cool-link-2">
-                                I'm an undergraduate student at the University of California, Berkeley studying Computer Science and Statistics and on track to graduate in 2023.
+                                I'm an undergraduate student at the University of California, Berkeley studying computer science, mathematics and statistics.
                                 </p>
                                 <p class="cool-link-2">
-                                Having grown up in Tokyo, studied in an Indian school, worked in Chinese and Japanese companies and 
-                                enrolled in an American university, I'm always eager to discover new perspectives. 
+                                Having grown up in Tokyo, studied in California and worked at American, Japanese and Chinese companies,
+                                I'm always eager to discover new perspectives.
                                 </p>
                             </div>
                         </div>
@@ -144,13 +144,10 @@
             <div class="padding-30">
                 <!-- section title -->
                 <h2 class="section-title">Experience</h2>
-
                 <div class="row">
                     <div class="col-12">
-                        
                         <!-- responsive spacer -->
                         <div class="spacer d-md-none d-lg-none" data-height="30"></div>
-
                         <!-- timeline wrapper -->
                         <div class="timeline exp overflow-hidden cool-link">
                             
@@ -161,7 +158,7 @@
                             <div class="timeline-container wow fadeInUp" data-wow-delay="0.2s">
                                 <img src="./images/airtable.png" class="company" aria-hidden="true">
                                 <div class="content">
-                                    <span class="time">Aug 2023 ~ &emsp;<span class="dont-wrap">San Francisco, CA</span></span>
+                                    <span class="time">Aug 2023 - ? &emsp;<span class="dont-wrap">San Francisco, CA</span></span>
                                     <h3 class="title">Incoming Software Engineer<span class="place">
                                         <span class="dont-wrap">
                                             — <a href="https://airtable.com" target="_blank">Airtable</a>
@@ -169,6 +166,24 @@
                                     </span></h3>
                                     <p>
                                         Core Product Team.</li> 
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- timeline item -->
+                            <div class="timeline-container wow fadeInUp" data-wow-delay="0.2s">
+                                <img src="./images/berkeley.png" class="company" aria-hidden="true">
+                                <div class="content">
+                                    <span class="time">May 2022 - Present &emsp;<span class="dont-wrap">Berkeley, CA</span></span>
+                                    <h3 class="title">Research Intern <span class="place">
+                                        <span class="dont-wrap">
+                                            — <a href="https://eecs.berkeley.edu" target="_blank">UC Berkeley EECS Dept</a>
+                                        </span>
+                                    </span></h3>
+                                    <p class="cool-link-2">
+                                        Helping develop Lingua Franca, a polyglot coordination language built to bring deterministic reactive
+                                        concurrency and time to mainstream target programming languages:
+                                        <a href="https://www.lf-lang.org/" target="_blank">https://www.lf-lang.org/</a> 
                                     </p>
                                 </div>
                             </div>
@@ -184,11 +199,14 @@
                                         </span>
                                     </span></h3>
                                     <p>
-                                        Alphabet's autonomous drone delivery project, originally created within Google X.</li> 
+                                        <ul>
+                                            <li>Alphabet's autonomous drone delivery project, originally created within Google X.</li>
+                                            <li>Developed a C++ RPC microservice to query live weather conditions from Google’s Knowledge Graph for drone flight/ simulation, and to cache recently queried values in a database. Tools: Stubby, Boq, gRPC, bazel, Spanner, protocol buffers.</li>
+                                            <li>Wrote a design doc for the microservice’s architecture, presented it to senior engineers and iterated based on feedback.</li>
+                                        </ul>
                                     </p>
                                 </div>
                             </div>
-
 
                             <!-- timeline item -->
                             <div class="timeline-container wow fadeInUp" data-wow-delay="0.2s">
@@ -209,10 +227,9 @@
                                 </div>
                             </div>
 
-
                             <!-- timeline item -->
                             <div class="timeline-container wow fadeInUp" data-wow-delay="0.2s">
-                                <img src="./images/kpmg.png" class="company" aria-hidden="true">
+                                <img src="./images/kpmg.jpeg" class="company" aria-hidden="true">
                                 <div class="content">
                                     <span class="time">July - Dec 2020 &emsp;<span class="dont-wrap">Tokyo, Japan</span></span>
                                     <h3 class="title">Software Engineer Intern <span class="place">
@@ -264,265 +281,162 @@
                                     </p>
                                 </div>
                             </div>
-
-                            
-
                         </div>
-
                     </div>
-
                 </div>
             </div>
 		</div>
-		
 	</section>
     
-    <div class="spacer" data-height="60"></div>
-
 	<!-- section works -->
 	<section id="works">
-
 		<div class="container">
-			
-			<!-- section title -->
-			<h2 class="section-title wow fadeInUp">Recent projects</h2>
+            <div class="padding-30">
+                <!-- section title -->
+                <h2 class="section-title">Recent projects</h2>
 
-			<div class="spacer" data-height="40"></div>
-
-			<!-- portfolio filter (desktop) -->
-			<ul class="portfolio-filter list-inline wow fadeInUp">
-				<li class="current list-inline-item" data-filter="*">Everything</li>
-				<li class="list-inline-item" data-filter=".web">Web</li>
-				<li class="list-inline-item" data-filter=".mobile">Mobile</li>
-				<li class="list-inline-item" data-filter=".research">Research</li>
-				<li class="list-inline-item" data-filter=".classwork">Classwork</li>
-			</ul>
-			
-			<!-- portfolio filter (mobile) -->
-			<!--div class="pf-filter-wrapper">
-				<select class="portfolio-filter-mobile">
-					<option value="*">Everything</option>
-					<option value=".web">Web</option>
-					<option value=".mobile">Mobile</option>
-					<option value=".research">Research</option>
-					<option value=".classwork">Classwork</option>
-				</select>
-			</div-->
-			
-			<!-- portolio wrapper -->
-			<div class="row portfolio-wrapper">
-                <!-- portfolio item -->
-				<div class="col-sm-6 grid-item web">
-                    <div class="portfolio-item rounded shadow-dark">
-                        <div class="details">
-                            <div>
-                                <h4 class="title"><i class="fas fa-virus"></i> Tokyo COVID-19 Tracker</h4>
-                                <span class="badge">Web</span>
-                            </div>
-                            <!--span class="more-button"><i class="icon-magnifier-add"></i></span-->
-
-                            <a href="images/covid19tokyo.png" class="work-image">
-                                
-                                <img src="images/covid19tokyo.png"/>
-                                <div class="mask">
+                <!-- portolio wrapper -->
+                <div class="row portfolio-wrapper">
+                    <!-- portfolio item -->
+                    <div class="col-lg grid-item web">
+                        <div class="portfolio-item">
+                            <div class="details">
+                                <div>
+                                    <h4 class="title">Neovim</h4>
                                 </div>
-                            </a>
-                            <p class="cool-link-2">
-                                <a href="https://covid19tokyo.live" target="_blank">covid19tokyo.live</a>, a web-based COVID-19 Dashboard for Tokyo that visualizes overall numbers, a map of the outbreak, cases by ward, age/gender data, and more.
-                                Received support from <a href="https://cloud.google.com/">Google Cloud</a> and <a href="https://www.mapbox.com/" target="_blank">Mapbox</a>, and created with Rahul Joshi and Yoshiki Yarlagadda.
-                            </p>
-                            <p class="cool-link-2">
-                                <i class="far fa-file-code"></i> HTML, CSS, JavaScript
-                                <br/>
-                                <i class="fas fa-link"></i>
-                                    <a href="https://covid19tokyo.live" target="_blank">covid19tokyo.live</a>
-                            </p>
-                        </div>
-                    </div>
-				</div>
-                
-				<!-- portfolio item -->
-				<div class="col-sm-6 grid-item mobile">
-                    <div class="portfolio-item rounded shadow-dark">
-                        <div class="details">
-                            <div>
-                                <h4 class="title"><i class="fas fa-tooth"></i> RetainerByte</h4>
-                                <span class="badge">Mobile</span>
-                            </div>
-                            <!--span class="more-button"><i class="icon-magnifier-add"></i></span-->
-
-                            <a href="images/retainerbyte-min.png" class="work-image">
-                                
-                                <img src="images/retainerbyte-min.png"/>
-                                <div class="mask">
-                                </div>
-                            </a>
-                            <p class="cool-link-2">
-                                An iOS app developed for Dr. Sneha Oberoi at <a href="https://ucsf.edu" target="_blank">UC San Francisco</a> that connects to a Bluetooth-embedded retainer 
-                                to track retainer usage and increase patient compliance. Created with Rishi Bhuwan and Arjun Kshirsagar.
-                            </p>
-                            <p class="cool-link-2">
-                                <i class="far fa-file-code"></i> Swift, Firebase
-                                <br/>
-                                <i class="fas fa-trophy"></i> 2nd place at 
-                                    <a href="https://funginstitute.berkeley.edu/ihackhealth-2020/" target="_blank">
-                                        iHackHealth Appathon
-                                    </a><br/>
-                                <i class="fas fa-mobile-alt"></i>
-                                    <a href="https://vimeo.com/395373234" target="_blank">Demo</a> &emsp;
-                                <i class="far fa-file-powerpoint"></i>
-                                    <a href="https://bit.ly/retainerByte" target="_blank">Pitch</a>
-                            </p>
-                        </div>
-                    </div>
-				</div>
-
-                <!-- portfolio item -->
-				<div class="col-sm-6 grid-item web">
-                    <div class="portfolio-item rounded shadow-dark">
-                        
-                        <div class="details">
-                            <h4 class="title"><i class="fas fa-layer-group"></i> Pacifica</h4>
-                            <span class="badge">Web</span>
-
-                            <a href="#gallery-2" class="gallery-link">
-                            <img src="images/pacifica2-min.png"/>
-                        </a>
-                        <div id="gallery-2" class="gallery mfp-hide">
-                            <a href="images/pacifica2-min.png"></a>
-                            <a href="images/pacifica1-min.png"></a>
-                            <a href="images/pacifica3-min.png"></a>
-                        </div>
-                            <p class="cool-link-2">
-                                A library management web app designed to perform basic administrative tasks of a school's library with minimal effort. Originally developed as a possible solution for my high school's uncataloged library.
-                            </p>
-                            <p class="cool-link-2">
-                                <i class="far fa-file-code"></i> PHP, MySQL, jQuery, HTML/CSS
-                                <br/>
-                                <i class="far fa-file-alt"></i>
-                                    <a href="https://github.com/patilatharva/pacifica/blob/master/README.md" target="_blank">Specs</a> &emsp;
-                                <i class="fas fa-code"></i>
-                                    <a href="https://github.com/patilatharva/pacifica" target="_blank">Code</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- portfolio item -->
-				<div class="col-sm-6 grid-item mobile">
-                    <div class="portfolio-item rounded shadow-dark">
-                        <div class="details">
-                            <h4 class="title"><i class="fas fa-map-pin"></i> LateNight</h4>
-                            <span class="badge">Mobile</span>
-                            <!--span class="more-button"><i class="icon-magnifier-add"></i></span-->
-
-                            <a href="images/latenight-min.png" class="work-image"><img src="images/latenight-min.png"/></a>
-                            <p class="cool-link-2">
-                                A restaurant recommendation app that maps safe and high-rated dining options based on Yelp food ratings and SFPD crime records. Created with Aiden Vehemente and Arjun Kshirsagar.
-                            </p>
-                            <p class="cool-link-2">
-                                <i class="far fa-file-code"></i> Python (Flask), SQLite, React Native
-                                <br/>
-                                <i class="fas fa-mobile-alt"></i>
-                                    <a href="https://vimeo.com/385844210" target="_blank">Demo</a> &emsp;
-                                <i class="far fa-file-alt"></i>
-                                    <a href="https://devpost.com/software/latenight" target="_blank">Devpost</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- portfolio item -->
-				<div class="col-sm-6 grid-item research">
-                    <div class="portfolio-item rounded shadow-dark">
-                        <div class="details">
-                            <h4 class="title"><i class="fas fa-globe-americas"></i> Smart Cities</h4>
-                            <span class="badge">Research</span>
-                            <!--span class="more-button"><i class="icon-magnifier-add"></i></span-->
-                            <center>
-                                <a href="https://its.berkeley.edu/research-centers/smart-cities" target="_blank">
-                                    <img src="images/city-min.jpg" style="border-radius: 7px; margin: 10px 0 20px; width: 85%;"/>
+                                <a href="images/nvim.png" class="work-image">
+                                    <img src="images/nvim.png">
+                                    <div class="mask"></div>
                                 </a>
-                            </center>
-                            <p class="cool-link-2">
-                                Developed Python web scrapers to scrape government, news and private company websites to measure​ ​the uptake of various <a href="https://its.berkeley.edu/research-centers/smart-cities">smart-city</a> technologies (in the security, mobility, and water sectors) by Californian government agencies. Part of my research assistantship at UC Berkeley.
-                            </p>
-                            <p class="cool-link-2">
-                                <i class="far fa-file-code"></i> Python (Scrapy)
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- portfolio item>
-				<div class="col-sm-6 grid-item web">
-                    <div class="portfolio-item rounded shadow-dark">
-                        <div class="details">
-                            <h4 class="title"><i class="fas fa-university"></i> Student Council Website</h4>
-                            <span class="badge">Web</span>
-
-                            <a href="http://iisjstudentcouncil.com" target="_blank"><img src="images/studentcouncil-min.png"/></a>
-                            <p class="cool-link-2">
-                                A website for my high school’s Student Council to handle event sign-ups, merch orders and student feedback. Created with Rahul Joshi.
-                            </p>
-                            <p class="cool-link-2">
-                                <i class="far fa-file-code"></i> PHP, JavaScript, HTML/CSS
                                 <br/>
-                                <i class="fas fa-link"></i>
-                                    <a href="http://iisjstudentcouncil.com" target="_blank">iisjstudentcouncil.com</a>
-                            </p>
-                        </div>
-                    </div>
-                </div-->
-
-                <!-- portfolio item -->
-				<div class="col-sm-6 grid-item classwork">
-                    <div class="portfolio-item rounded shadow-dark">
-                        <div class="details">
-                            <h4 class="title"><i class="fas fa-bolt"></i> Scheme Interpreter</h4>
-                            <span class="badge">Classwork</span>
-                            <!--span class="more-button"><i class="icon-magnifier-add"></i></span-->
-
-                            <center>
-                                <img src="images/money_tree-min.png" style="height: 170px; padding: 10px 0 25px;"/>
-                            </center>
-                            <p class="cool-link-2">
-                                An interpreter of a subset of the Scheme language, written in Python. Final project for CS 61A - Structure and Interpretation of Computer Programs.
-                            </p>
-                            <p class="cool-link-2">
                                 <p class="cool-link-2">
-                                    <i class="far fa-file-code"></i> Python
-                                <br/>
-                                <i class="fas fa-code"></i>
-                                    <a href="https://github.com/patilatharva/scheme" target="_blank">Code</a>
-                            </p>
+                                    My config for <a href="https://neovim.io/" target="_blank">Neovim</a>, a Vim-based text editor engineered for extensibility and usability.
+                                    My primary development enironment since mid-2022.
+                                </p>
+                                <p class="cool-link-2">
+                                    <i class="far fa-file-code"></i> Lua
+                                    <br/>
+                                    <i class="fas fa-link"></i>
+                                    <a href="https://github.com/patilatharva/nvim" target="_blank">https://github.com/patilatharva/nvim</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- portfolio item -->
+                    <div class="col-lg grid-item web">
+                        <div class="portfolio-item">
+                            <div class="details">
+                                <div>
+                                    <h4 class="title">Pandemap</h4>
+                                </div>
+                                <a href="images/pandemap.png" class="work-image">
+                                    <img src="images/pandemap.png"/>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <p class="cool-link-2">
+                                    A location suggestion app for college students that recommends the least crowded places on campus 
+                                    by applying computer vision on CCTV footage and analyzing location data. The system also provides
+                                    insightful analytics to the college administration about the state of COVID-19 on campus.
+                                </p>
+                                <p class="cool-link-2">
+                                    <i class="fas fa-medal"></i>
+                                    Won the
+                                    <a href="https://medium.com/callforcode/congratulations-to-the-2020-call-for-code-global-challenge-university-edition-winner-pandemap-8a04e36a0b98" target="_blank">
+                                        2020 IBM Call for Code University Edition</a>
+                                    and received $10k in funding.
+                                    </a>
+                                    <br/>
+                                    <i class="far fa-file-code"></i> Python, React Native
+                                    <br/>
+                                    <i class="fas fa-link"></i>
+                                    <a href="https://github.com/tejjogani/Pandemap" target="_blank">https://github.com/tejjogani/Pandemap</a>
+                                    <br/>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- portfolio item -->
+                    <div class="col-lg grid-item web">
+                        <div class="portfolio-item">
+                            <div class="details">
+                                <div>
+                                    <h4 class="title">Tokyo COVID-19 Tracker</h4>
+                                </div>
+                                <a href="images/covid19tokyo.png" class="work-image">
+                                    <img src="images/covid19tokyo.png"/>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <p class="cool-link-2">
+                                    <a href="https://covid19tokyo.live" target="_blank">covid19tokyo.live</a>, a web-based COVID-19 Dashboard for Tokyo that visualizes overall numbers, a map of the outbreak, cases by ward, age/gender data, and more.
+                                    Received support from <a href="https://cloud.google.com/">Google Cloud</a> and <a href="https://www.mapbox.com/" target="_blank">Mapbox</a>, and created with Rahul Joshi and Yoshiki Yarlagadda.
+                                </p>
+                                <p class="cool-link-2">
+                                    <i class="far fa-file-code"></i> HTML, CSS, JavaScript
+                                    <br/>
+                                    <i class="fas fa-link"></i>
+                                        <a href="https://covid19tokyo.live" target="_blank">covid19tokyo.live</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- portfolio item -->
+                    <div class="col-lg grid-item mobile">
+                        <div class="portfolio-item">
+                            <div class="details">
+                                <div>
+                                    <h4 class="title">RetainerByte</h4>
+                                </div>
+                                <a href="images/retainerbyte-min.png" class="work-image">
+                                    <img src="images/retainerbyte-min.png"/>
+                                    <div class="mask">
+                                    </div>
+                                </a>
+                                <p class="cool-link-2">
+                                    An iOS app developed for Dr. Sneha Oberoi at <a href="https://ucsf.edu" target="_blank">UC San Francisco</a> that connects to a Bluetooth-embedded retainer 
+                                    to track retainer usage and increase patient compliance. Created with Rishi Bhuwan and Arjun Kshirsagar.
+                                </p>
+                                <p class="cool-link-2">
+                                    <i class="far fa-file-code"></i> Swift, Firebase
+                                    <br/>
+                                    <i class="fas fa-trophy"></i> 2nd place at 
+                                        <a href="https://funginstitute.berkeley.edu/ihackhealth-2020/" target="_blank">
+                                            iHackHealth Appathon
+                                        </a><br/>
+                                    <i class="fas fa-mobile-alt"></i>
+                                        <a href="https://vimeo.com/395373234" target="_blank">Demo</a> &emsp;
+                                    <i class="far fa-file-powerpoint"></i>
+                                        <a href="https://bit.ly/retainerByte" target="_blank">Pitch</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- portfolio item -->
+                    <div class="col-lg grid-item mobile">
+                        <div class="portfolio-item">
+                            <div class="details">
+                                <h4 class="title">LateNight</h4>
+                                <a href="images/latenight-min.png" class="work-image"><img src="images/latenight-min.png"/></a>
+                                <p class="cool-link-2">
+                                    A restaurant recommendation app that maps safe and high-rated dining options based on Yelp food ratings and SFPD crime records. Created with Aiden Vehemente and Arjun Kshirsagar.
+                                </p>
+                                <p class="cool-link-2">
+                                    <i class="far fa-file-code"></i> Python (Flask), SQLite, React Native
+                                    <br/>
+                                    <i class="fas fa-mobile-alt"></i>
+                                        <a href="https://vimeo.com/385844210" target="_blank">Demo</a> &emsp;
+                                    <i class="far fa-file-alt"></i>
+                                        <a href="https://devpost.com/software/latenight" target="_blank">Devpost</a>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-				<!--div class="col-sm-6 grid-item creative design">
-					<a href="#small-dialog" class="work-content">
-						<div class="portfolio-item rounded shadow-dark">
-							<div class="details">
-								<span class="term">Creative</span>
-								<h4 class="title">Guest App Walkthrough Screens</h4>
-								<span class="more-button"><i class="icon-options"></i></span>
-							</div>
-							<div class="thumb">
-								<img src="images/works/2.svg" alt="Portfolio-title" />
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-					<div id="small-dialog" class="white-popup zoom-anim-dialog mfp-hide">
-						<img src="images/single-work.svg" alt="Title" />
-						<h2>Guest App Walkthrough Screens</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam hendrerit nibh in massa semper rutrum. In rhoncus eleifend mi id tempus.</p>
-						<p>Donec consectetur, libero at pretium euismod, nisl felis lobortis urna, id tristique nisl lectus eget ligula.</p>
-						<a href="#" class="btn btn-default">View on Dribbble</a>
-					</div>
-				</div-->
-
 			</div>
 		</div>
 
@@ -535,8 +449,6 @@
 		<div class="container">
 			
 			<!-- section title -->
-			<!--h2 class="section-title wow fadeInUp">Get In Touch</h2-->
-
 			<div class="spacer" data-height="40"></div>
 			
 			<div class="row">
@@ -558,11 +470,10 @@
                         </ul>
 
                         <div class="email">
-                            <b>atharva</b> [dot] <b>patil</b> [at] <b>berkeley</b> [dot] <b>edu</b>
+                            <b>athp</b> [at] <b>berkeley</b> [dot] <b>edu</b>
                         </div>
 
                     </div>
-                    Check this website's source code <a href="https://github.com/patilatharva/patilatharva.github.io" target="_blank">here</a>.
                 </div>
             </div>
 		</div>
