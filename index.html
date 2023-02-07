@@ -22,6 +22,9 @@
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 
+    <!-- Mapbox -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-X8CVHJ7TM9"></script>
     <script>
@@ -70,7 +73,6 @@
 				<h1 class="mb-2 mt-0" style="margin-top: 40px !important">Atharva Patil</h1>
 				<!--span>Computer Science and Statistics <span style="display: inline-block;">· UC Berkeley '23</span></span-->
 
-
                 <div style='font-size: 14px; margin-top: 20px;'>
                     <b>athp</b> [at] <b>berkeley</b> [dot] <b>edu</b>
                 </div>
@@ -89,40 +91,22 @@
                         <a href="https://www.instagram.com/atharvap4til/" target="_blank"><i class="fab fa-instagram"></i></a>
                     </li>
                 </ul>
-
 			</div>
-			
-			<!-- scroll down mouse wheel >
-			<div class="scroll-down light">
-				<a href="#about" class="mouse-wrapper">
-					<span>Scroll Down</span>
-					<span class="mouse">
-						<span class="wheel"></span>
-					</span>
-				</a>
-			</div-->
 		</div>
-		
 	</section>
 
 	<!-- section about -->
 	<section id="about">
-
         <div class="container">
-
             <div class="padding-30">
                 <!-- section title -->
                 <h2 class="section-title">About Me</h2>
-
                 <div class="row">
                     <div class="col">
                         <div class="row">
                             <div class="col-12">
                                 <!-- about text -->
                                 <p>Hey there, I'm Atharva!</p>
-                                <p class="cool-link-2">
-                                I'm an undergraduate student at the University of California, Berkeley studying computer science, mathematics and statistics.
-                                </p>
                                 <p class="cool-link-2">
                                 Having grown up in Tokyo, studied in California and worked at American, Japanese and Chinese companies,
                                 I'm always eager to discover new perspectives.
@@ -131,11 +115,42 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         <!-- row end -->
         </div>
     </section>
+
+	<!-- section map -->
+	<section id="mymap">
+        <div class="container">
+            <div class="padding-30">
+                <!-- section title -->
+                <h2 class="section-title">What I'm up to</h2>
+                <div id="map" style="height: 250px; width=100%; margin-bottom: 10px"></div>
+
+                Studying computer science, mathematics and statistics, among other things, at UC Berkeley.
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const berkeleyLatLng = [-122.259094, 37.871960];
+
+        mapboxgl.accessToken = 'pk.eyJ1IjoicGF0aWxhdGhhcnZhIiwiYSI6ImNrOHN3MG5yczAzNzYzcW53anExZXZhNzkifQ.tZlhVCnq5qVYs3cEQbdSdw';
+        const map = new mapboxgl.Map({
+            container: 'map',
+            // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+            style: 'mapbox://styles/patilatharva/cldtxt01b000001o7zeft01b2',
+            center: berkeleyLatLng,
+            zoom: 9
+        });
+        map.scrollZoom.disable();
+
+        // Create a default Marker and add it to the map.
+        const marker1 = new mapboxgl.Marker({color: '#F44336'})
+            .setLngLat(berkeleyLatLng)
+            .addTo(map);
+    </script>
     
 	<!-- section experience -->
 	<section id="experience">
@@ -447,32 +462,35 @@
 	<section id="contact">
 
 		<div class="container">
-			
-			<!-- section title -->
-			<div class="spacer" data-height="40"></div>
-			
-			<div class="row">
-				<div class="col-md-12">
-					<!-- contact info -->
-					<div class="contact-info">
-                        <!--h3 style="color: #1cc49a">Let's talk about everything!</h3-->
-                        
-                        <ul class="social-icons light list-inline mb-0 mt-4" style="margin-top: 1rem!important; display: inline-block;">
-                            <li class="list-inline-item">
-                                <a href="https://github.com/patilatharva" target="_blank"><i class="fab fa-github"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://www.linkedin.com/in/atharvap4til/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://www.instagram.com/atharvap4til/" target="_blank"><i class="fab fa-instagram"></i></a>
-                            </li>
-                        </ul>
 
-                        <div class="email">
-                            <b>athp</b> [at] <b>berkeley</b> [dot] <b>edu</b>
+            <div class="padding-30">
+			
+                <!-- section title -->
+                <div class="spacer" data-height="40"></div>
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- contact info -->
+                        <div class="contact-info">
+                            <!--h3 style="color: #1cc49a">Let's talk about everything!</h3-->
+                            
+                            <ul class="social-icons light list-inline mb-0 mt-4" style="margin-top: 1rem!important; display: inline-block;">
+                                <li class="list-inline-item">
+                                    <a href="https://github.com/patilatharva" target="_blank"><i class="fab fa-github"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://www.linkedin.com/in/atharvap4til/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://www.instagram.com/atharvap4til/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                </li>
+                            </ul>
+
+                            <div class="email">
+                                <b>athp</b> [at] <b>berkeley</b> [dot] <b>edu</b>
+                            </div>
+
                         </div>
-
                     </div>
                 </div>
             </div>
